@@ -35,7 +35,7 @@ html, body {
 nav {
     width: 100%;
     background: #0f0f0f;
-    height: 80px;
+    height: 90px;
     position: fixed;
     z-index: 1;
 }
@@ -43,29 +43,26 @@ nav {
 nav #MyName {
     float: left;
     display: block;
-    margin-left: 32px;
-    line-height: 80px;
+    margin-left: 40px;
+    line-height: 5;
     font-weight: bold;
 }
 
 nav #MyName a {
     color: #fff;
-}
-
-nav #MyName a:hover {
     text-decoration: none;
 }
 
 nav #menu {
     float: left;
-    right: 80px;
+    right: 90px;
     position: fixed;
 }
 
 nav #menu li {
-    padding-left: 40px;
+    padding-left: 45px;
     display: inline-block;
-    font-weight: 300;
+    font-weight: 280;
     line-height: 5;
     position: relative;
 }
@@ -77,139 +74,102 @@ nav #menu li span {
 nav #menu li a {
     color: #fff;
     font-weight: bold;
+    background-color: #0f0f0f;
 }
 
 /*---- hero section ----*/
 
 .hero {
-    height: 100vh;
+    height: 92vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.hero h1 {
+.hero h3 {
     font-weight: lighter;
     text-align: center;
-    letter-spacing: -2px;
-    line-height: 58px;
+    letter-spacing: -3px;
+    line-height: 55px;
 }
 
-/*---- projects section ----*/
+/*---- My Work section ----*/
 
-h6 {
-    text-align: center;
+.work {
+    margin-left: 30px;
+    font-weight: bold;
 }
 
-.vertical {
-    margin-top: 40px;
-    border-left: 1px solid #fff;
-    height: 80px;
-    position: absolute;
-    left: 50%;
-}
-
-.project {
-    height: 500px;
-}
-
-.project1 {
-    background: url("/images/MyWork.png") no-repeat 50% 50%;
-    background-size: cover;
-}
-
-.project2 {
-    background: url("/images/MyWork.png") no-repeat 50% 50%;
-    background-size: cover;
-}
-
-.project3 {
-    background: url("/images/MyWork.png") no-repeat 50% 50%;
-    background-size: cover;
-}
-
-.project4 {
-    background: url("/images/MyWork.png") no-repeat 50% 50%;
-    background-size: cover;
+.pjct a img {
+    width: 100%;
+    height: auto;
 }
 
 /*---- footer section ----*/
 
-.collab {
+.lookingfor {
     text-align: right;
 }
 
-.collab p {
+.lookingfor p {
     font-weight: lighter !important;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: x-large;
 }
 
 .hr {
-    background: rgba(255, 255, 255, 0.2);
-    height: 1px;
+    background: rgba(255, 254, 254, 0.1);
+    height: 3px;
 }
 
-.info h4 {
+.socialmedia h4 {
     font-size: 18px;
     font-weight: lighter;
 }
 
-.info p {
+.socialmedia p {
     color: grey;
     font-weight: lighter;
 }
 
-.info li {
+.socialmedia li {
     font-weight: lighter;
     color: #fff;
     font-size: 18px;
     padding-left: 20px;
 }
 
-#gh::before {
+#media ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.dot::before {
     display: inline-block;
     content: '';
     border-radius: 100%;
     height: 4px;
     width: 4px;
     margin-right: 6px;
+}
+#gh::before {
     background: #3b5998;
 }
 
-
 #ig::before {
-    display: inline-block;
-    content: '';
-    border-radius: 100%;
-    height: 4px;
-    width: 4px;
-    margin-right: 6px;
-    background: #fcaf45;
+    background: #f36cbf;
 }
 
-
 #tw::before {
-    display: inline-block;
-    content: '';
-    border-radius: 100%;
-    height: 4px;
-    width: 4px;
-    margin-right: 6px;
     background: #55acee;
 }
 
-
-#yt::before {
-    display: inline-block;
-    content: '';
-    border-radius: 100%;
-    height: 4px;
-    width: 4px;
-    margin-right: 6px;
-    background: #c4302b;
+#lk::before {
+    background: #98cdf0;
 }
 
-#media, #address {
+#media, #mailme {
     text-align: right;
 }
 
@@ -233,8 +193,10 @@ h6 {
     color: grey;
 }
 
-.hero-content h6 {
+.hero-content h2 {
     text-align: left;
+    margin-left: 35px;
+    font-weight: bold;
 }
 
 /*---- about page ----*/
@@ -244,8 +206,9 @@ h6 {
     margin-top: 120px;
 }
 
-.image {
-    background: url("/images/MyWork.png") no-repeat 50% 70%;
+.blackndwhite{
+    width: 100vw;
+    height: auto;
 }
 
 /*---- contact form ----*/
@@ -328,10 +291,14 @@ textarea:focus {
 }
 
 /* WORKING ON IT  */
- .Working {
+ #working {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#working img {
+    width: 22vw;
 }
 
 /* @media */
@@ -358,55 +325,31 @@ textarea:focus {
         width: 0;
     }
     to {
-        width: 18em;
+        width: 35em;
     }
 }
 
 @keyframes blinkTextCussor {
     from {
-          border-right-color: rgba(206, 191, 108, 0.747);
+          border-right-color: rgba(255, 253, 241, 0.747);
     }
     to {
           border-right-color: transparent;
     }
 }
 
-
-@media(max-width: 768px){
-    #toggle{
-        visibility: visible;
-        opacity: 1;
-        margin-top: 6px;
-        margin-right: 4px;
-    }
-
-    @media(min-width: 768px) {
-        #resize {
-              visibility: hidden !important;
-        }
-    }
-
-    @media(max-width: 768px) {
+@media(max-width: 768px) {
         .header h1 {
               font-size: 26px;
         }
-    }
+}
 
     
 @media(max-width: 768px) {
-    .project {
+    .pjct {
           width: 90% !important;
           margin: 14px auto;
     }
-
-    .vertical {
-          display: none;
-    }
-
-    .project1::after, .project2::after, .project3::after, .project4::after {
-          display: none;
-    }
-}
 
 @media(m-width: 768px) {
     .hero-content {
@@ -418,11 +361,11 @@ textarea:focus {
 
 
 @media(max-width: 768px) {
-    .collab, #personal, #media, #address {
+    .lookingfor, #personal, #media, #mailme {
           text-align: center;
     }
 
-    .info ul {
+    .socialmedia ul {
           margin: 0 0 0 -22px;
           padding: 0;
     }
